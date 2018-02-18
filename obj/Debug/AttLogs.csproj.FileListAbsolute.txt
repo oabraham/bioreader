@@ -1,0 +1,34 @@
+C:\Timeclock\HF_TFT_SDK 6.2.4.1---Huifan_Cherry\HF_TFT_SDK 6.2.4.1\Demo\C#\AttLogs\obj\Debug\Interop.hfemkeeper.dll
+C:\Timeclock\HF_TFT_SDK 6.2.4.1---Huifan_Cherry\HF_TFT_SDK 6.2.4.1\Demo\C#\AttLogs\obj\Debug\AttLogs.csproj.ResolveComReference.cache
+C:\Timeclock\HF_TFT_SDK 6.2.4.1---Huifan_Cherry\HF_TFT_SDK 6.2.4.1\Demo\C#\AttLogs\bin\Debug\AttLogs.exe
+C:\Timeclock\HF_TFT_SDK 6.2.4.1---Huifan_Cherry\HF_TFT_SDK 6.2.4.1\Demo\C#\AttLogs\bin\Debug\AttLogs.pdb
+C:\Timeclock\HF_TFT_SDK 6.2.4.1---Huifan_Cherry\HF_TFT_SDK 6.2.4.1\Demo\C#\AttLogs\bin\Debug\Interop.hfemkeeper.dll
+C:\Timeclock\HF_TFT_SDK 6.2.4.1---Huifan_Cherry\HF_TFT_SDK 6.2.4.1\Demo\C#\AttLogs\obj\Debug\AttLogs.AttLogsMain.resources
+C:\Timeclock\HF_TFT_SDK 6.2.4.1---Huifan_Cherry\HF_TFT_SDK 6.2.4.1\Demo\C#\AttLogs\obj\Debug\AttLogs.Properties.Resources.resources
+C:\Timeclock\HF_TFT_SDK 6.2.4.1---Huifan_Cherry\HF_TFT_SDK 6.2.4.1\Demo\C#\AttLogs\obj\Debug\AttLogs.csproj.GenerateResource.Cache
+C:\Timeclock\HF_TFT_SDK 6.2.4.1---Huifan_Cherry\HF_TFT_SDK 6.2.4.1\Demo\C#\AttLogs\obj\Debug\AttLogs.exe
+C:\Timeclock\HF_TFT_SDK 6.2.4.1---Huifan_Cherry\HF_TFT_SDK 6.2.4.1\Demo\C#\AttLogs\obj\Debug\AttLogs.pdb
+C:\Timeclock\AttLogs\obj\Debug\Interop.hfemkeeper.dll
+C:\Timeclock\AttLogs\obj\Debug\AttLogs.csproj.ResolveComReference.cache
+C:\Timeclock\AttLogs\obj\Debug\AttLogs.exe
+C:\Timeclock\AttLogs\obj\Debug\AttLogs.pdb
+C:\Timeclock\AttLogs\bin\Debug\AttLogs.exe
+C:\Timeclock\AttLogs\bin\Debug\AttLogs.pdb
+C:\Timeclock\AttLogs\bin\Debug\Interop.hfemkeeper.dll
+C:\Timeclock\AttLogs\obj\Debug\AttLogs.AttLogsMain.resources
+C:\Timeclock\AttLogs\obj\Debug\AttLogs.Properties.Resources.resources
+C:\Timeclock\AttLogs\obj\Debug\AttLogs.csproj.GenerateResource.Cache
+C:\Timeclock\AttLogs\obj\Debug\AttLogs.csprojResolveAssemblyReference.cache
+C:\Timeclock\AttLogs\bin\Debug\AttLogs.exe.config
+C:\AttLogs\bin\Debug\AttLogs.exe.config
+C:\AttLogs\obj\Debug\Interop.hfemkeeper.dll
+C:\AttLogs\obj\Debug\AttLogs.csproj.ResolveComReference.cache
+C:\AttLogs\obj\Debug\AttLogs.exe
+C:\AttLogs\obj\Debug\AttLogs.pdb
+C:\AttLogs\bin\Debug\AttLogs.exe
+C:\AttLogs\bin\Debug\AttLogs.pdb
+C:\AttLogs\bin\Debug\Interop.hfemkeeper.dll
+C:\AttLogs\obj\Debug\AttLogs.csprojResolveAssemblyReference.cache
+C:\AttLogs\obj\Debug\AttLogs.AttLogsMain.resources
+C:\AttLogs\obj\Debug\AttLogs.Properties.Resources.resources
+C:\AttLogs\obj\Debug\AttLogs.csproj.GenerateResource.Cache

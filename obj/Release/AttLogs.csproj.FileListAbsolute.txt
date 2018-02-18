@@ -1,0 +1,34 @@
+C:\Users\William\Desktop\脱机通讯开发包(32bit Ver6.2.4.0)\Demo\C#\TFT\AttLogs\obj\Release\Interop.hfemkeeper.dll
+C:\Users\William\Desktop\脱机通讯开发包(32bit Ver6.2.4.0)\Demo\C#\TFT\AttLogs\obj\Release\AttLogs.csproj.ResolveComReference.cache
+C:\Users\William\Desktop\脱机通讯开发包(32bit Ver6.2.4.0)\Demo\C#\TFT\AttLogs\obj\Release\ResolveAssemblyReference.cache
+C:\Users\William\Desktop\脱机通讯开发包(32bit Ver6.2.4.0)\Demo\C#\TFT\AttLogs\obj\Release\AttLogs.AttLogsMain.resources
+C:\Users\William\Desktop\脱机通讯开发包(32bit Ver6.2.4.0)\Demo\C#\TFT\AttLogs\obj\Release\AttLogs.Properties.Resources.resources
+C:\Users\William\Desktop\脱机通讯开发包(32bit Ver6.2.4.0)\Demo\C#\TFT\AttLogs\obj\Release\GenerateResource-ResGen.read.1.tlog
+C:\Users\William\Desktop\脱机通讯开发包(32bit Ver6.2.4.0)\Demo\C#\TFT\AttLogs\obj\Release\GenerateResource-ResGen.write.1.tlog
+C:\Users\William\Desktop\脱机通讯开发包(32bit Ver6.2.4.0)\Demo\C#\TFT\AttLogs\bin\Release\AttLogs.exe
+C:\Users\William\Desktop\脱机通讯开发包(32bit Ver6.2.4.0)\Demo\C#\TFT\AttLogs\bin\Release\AttLogs.pdb
+C:\Users\William\Desktop\脱机通讯开发包(32bit Ver6.2.4.0)\Demo\C#\TFT\AttLogs\bin\Release\Interop.hfemkeeper.dll
+C:\Users\William\Desktop\脱机通讯开发包(32bit Ver6.2.4.0)\Demo\C#\TFT\AttLogs\obj\Release\AttLogs.exe
+C:\Users\William\Desktop\脱机通讯开发包(32bit Ver6.2.4.0)\Demo\C#\TFT\AttLogs\obj\Release\AttLogs.pdb
+C:\Timeclock\HF_TFT_SDK 6.2.4.1---Huifan_Cherry\HF_TFT_SDK 6.2.4.1\Demo\C#\AttLogs\obj\Release\AttLogs.csproj.ResolveComReference.cache
+C:\Timeclock\HF_TFT_SDK 6.2.4.1---Huifan_Cherry\HF_TFT_SDK 6.2.4.1\Demo\C#\AttLogs\obj\Release\AttLogs.exe
+C:\Timeclock\HF_TFT_SDK 6.2.4.1---Huifan_Cherry\HF_TFT_SDK 6.2.4.1\Demo\C#\AttLogs\obj\Release\AttLogs.pdb
+C:\Timeclock\HF_TFT_SDK 6.2.4.1---Huifan_Cherry\HF_TFT_SDK 6.2.4.1\Demo\C#\AttLogs\obj\Release\AttLogs.csprojResolveAssemblyReference.cache
+C:\Timeclock\HF_TFT_SDK 6.2.4.1---Huifan_Cherry\HF_TFT_SDK 6.2.4.1\Demo\C#\AttLogs\obj\Release\AttLogs.AttLogsMain.resources
+C:\Timeclock\HF_TFT_SDK 6.2.4.1---Huifan_Cherry\HF_TFT_SDK 6.2.4.1\Demo\C#\AttLogs\obj\Release\AttLogs.Properties.Resources.resources
+C:\Timeclock\HF_TFT_SDK 6.2.4.1---Huifan_Cherry\HF_TFT_SDK 6.2.4.1\Demo\C#\AttLogs\obj\Release\AttLogs.csproj.GenerateResource.Cache
+C:\Timeclock\HF_TFT_SDK 6.2.4.1---Huifan_Cherry\HF_TFT_SDK 6.2.4.1\Demo\C#\AttLogs\bin\Release\AttLogs.exe
+C:\Timeclock\HF_TFT_SDK 6.2.4.1---Huifan_Cherry\HF_TFT_SDK 6.2.4.1\Demo\C#\AttLogs\bin\Release\AttLogs.pdb
+C:\Timeclock\HF_TFT_SDK 6.2.4.1---Huifan_Cherry\HF_TFT_SDK 6.2.4.1\Demo\C#\AttLogs\bin\Release\Interop.hfemkeeper.dll
+C:\Timeclock\HF_TFT_SDK 6.2.4.1---Huifan_Cherry\HF_TFT_SDK 6.2.4.1\Demo\C#\AttLogs\obj\Release\Interop.hfemkeeper.dll
+C:\Timeclock\AttLogs\obj\Release\Interop.hfemkeeper.dll
+C:\Timeclock\AttLogs\obj\Release\AttLogs.csproj.ResolveComReference.cache
+C:\Timeclock\AttLogs\obj\Release\AttLogs.exe
+C:\Timeclock\AttLogs\obj\Release\AttLogs.pdb
+C:\Timeclock\AttLogs\bin\Release\AttLogs.exe
+C:\Timeclock\AttLogs\bin\Release\AttLogs.pdb
+C:\Timeclock\AttLogs\bin\Release\Interop.hfemkeeper.dll
+C:\Timeclock\AttLogs\obj\Release\AttLogs.csprojResolveAssemblyReference.cache
+C:\Timeclock\AttLogs\obj\Release\AttLogs.AttLogsMain.resources
+C:\Timeclock\AttLogs\obj\Release\AttLogs.Properties.Resources.resources
+C:\Timeclock\AttLogs\obj\Release\AttLogs.csproj.GenerateResource.Cache

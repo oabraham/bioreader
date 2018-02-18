@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://ac3.alchavo.com/AttendanceService.asmx" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://ac3.alchavo.com/AttendanceService.asmx" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://ac3.alchavo.com/AttendanceService.asmx">
+      <s:element name="ImportBioPunchs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CompanyIdentification" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserIdentification" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UploadTable">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportBioPunchsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ImportBioPunchsResult" type="tns:ImportInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ImportInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RejectedLines" type="tns:ArrayOfRejectedRecord" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfRejectedRecord">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RejectedRecord" type="tns:RejectedRecord" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RejectedRecord">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EmployeeIdent" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DepartmentIdent" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PunchInDateTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PunchOutDateTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reason" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ImportHours">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CompanyIdentification" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserIdentification" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FileToImport" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportHoursResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ImportHoursResult" type="tns:ImportInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportSchedules">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CompanyIdentification" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserIdentification" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FileToImport" type="s:base64Binary" />
+            <s:element minOccurs="1" maxOccurs="1" name="OverwritePrevious" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportSchedulesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ImportSchedulesResult" type="tns:ImportedSchedulesInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ImportedSchedulesInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RejectedLines" type="tns:ArrayOfRejectedSchedules" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfRejectedSchedules">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RejectedSchedules" type="tns:RejectedSchedules" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RejectedSchedules">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EmployeeIdent" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BidPeriodStart" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BidPeriodEnd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SundayFirstPunchInTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SundayFirstPunchOutTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SundaySecondPunchInTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SundaySecondPunchOutTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MondayFirstPunchInTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MondayFirstPunchOutTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MondaySecondPunchInTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MondaySecondPunchOutTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TuesdayFirstPunchInTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TuesdayFirstPunchOutTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TuesdaySecondPunchInTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TuesdaySecondPunchOutTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WednesdayFirstPunchInTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WednesdayFirstPunchOutTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WednesdaySecondPunchInTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WednesdaySecondPunchOutTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThursdayFirstPunchInTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThursdayFirstPunchOutTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThursdaySecondPunchInTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThursdaySecondPunchOutTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FridayFirstPunchInTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FridayFirstPunchOutTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FridaySecondPunchInTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FridaySecondPunchOutTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SaturdayFirstPunchInTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SaturdayFirstPunchOutTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SaturdaySecondPunchInTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SaturdaySecondPunchOutTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reason" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddPunch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CompanyIdentification" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserIdentification" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EmployeeID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DepartmentID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PunchTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsPunchIn" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddPunchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddPunchResult" type="tns:PunchInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PunchInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RejectedLines" type="tns:ArrayOfRejectedPunch" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfRejectedPunch">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RejectedPunch" type="tns:RejectedPunch" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RejectedPunch">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EmployeeIdent" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DepartmentIdent" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PunchTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IsPunchIn" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reason" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ImportBioPunchsSoapIn">
+    <wsdl:part name="parameters" element="tns:ImportBioPunchs" />
+  </wsdl:message>
+  <wsdl:message name="ImportBioPunchsSoapOut">
+    <wsdl:part name="parameters" element="tns:ImportBioPunchsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ImportHoursSoapIn">
+    <wsdl:part name="parameters" element="tns:ImportHours" />
+  </wsdl:message>
+  <wsdl:message name="ImportHoursSoapOut">
+    <wsdl:part name="parameters" element="tns:ImportHoursResponse" />
+  </wsdl:message>
+  <wsdl:message name="ImportSchedulesSoapIn">
+    <wsdl:part name="parameters" element="tns:ImportSchedules" />
+  </wsdl:message>
+  <wsdl:message name="ImportSchedulesSoapOut">
+    <wsdl:part name="parameters" element="tns:ImportSchedulesResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddPunchSoapIn">
+    <wsdl:part name="parameters" element="tns:AddPunch" />
+  </wsdl:message>
+  <wsdl:message name="AddPunchSoapOut">
+    <wsdl:part name="parameters" element="tns:AddPunchResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AttendanceServiceSoap">
+    <wsdl:operation name="ImportBioPunchs">
+      <wsdl:input message="tns:ImportBioPunchsSoapIn" />
+      <wsdl:output message="tns:ImportBioPunchsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportHours">
+      <wsdl:input message="tns:ImportHoursSoapIn" />
+      <wsdl:output message="tns:ImportHoursSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportSchedules">
+      <wsdl:input message="tns:ImportSchedulesSoapIn" />
+      <wsdl:output message="tns:ImportSchedulesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPunch">
+      <wsdl:input message="tns:AddPunchSoapIn" />
+      <wsdl:output message="tns:AddPunchSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AttendanceServiceSoap" type="tns:AttendanceServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ImportBioPunchs">
+      <soap:operation soapAction="http://ac3.alchavo.com/AttendanceService.asmx/ImportBioPunchs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportHours">
+      <soap:operation soapAction="http://ac3.alchavo.com/AttendanceService.asmx/ImportHours" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportSchedules">
+      <soap:operation soapAction="http://ac3.alchavo.com/AttendanceService.asmx/ImportSchedules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPunch">
+      <soap:operation soapAction="http://ac3.alchavo.com/AttendanceService.asmx/AddPunch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AttendanceServiceSoap12" type="tns:AttendanceServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ImportBioPunchs">
+      <soap12:operation soapAction="http://ac3.alchavo.com/AttendanceService.asmx/ImportBioPunchs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportHours">
+      <soap12:operation soapAction="http://ac3.alchavo.com/AttendanceService.asmx/ImportHours" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportSchedules">
+      <soap12:operation soapAction="http://ac3.alchavo.com/AttendanceService.asmx/ImportSchedules" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPunch">
+      <soap12:operation soapAction="http://ac3.alchavo.com/AttendanceService.asmx/AddPunch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AttendanceService">
+    <wsdl:port name="AttendanceServiceSoap" binding="tns:AttendanceServiceSoap">
+      <soap:address location="http://localhost:3841/AttendanceService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AttendanceServiceSoap12" binding="tns:AttendanceServiceSoap12">
+      <soap12:address location="http://localhost:3841/AttendanceService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

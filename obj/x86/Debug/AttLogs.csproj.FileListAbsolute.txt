@@ -1,0 +1,7 @@
+C:\AttLogs\obj\x86\Debug\Interop.zkemkeeper.dll
+C:\AttLogs\obj\x86\Debug\AttLogs.csproj.ResolveComReference.cache
+C:\AttLogs\obj\x86\Debug\AttLogs.AttLogsMain.resources
+C:\AttLogs\obj\x86\Debug\AttLogs.Properties.Resources.resources
+C:\AttLogs\obj\x86\Debug\AttLogs.csproj.GenerateResource.Cache
+C:\AttLogs\bin\x86\Debug\AttLogs.exe.config
+C:\AttLogs\obj\x86\Debug\AttLogs.csprojResolveAssemblyReference.cache
