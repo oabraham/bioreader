@@ -1,7 +1,4 @@
-﻿/*********************************************************
-* Demo for Standalone SDK.Created by Darcy on Mar.20 2012*
-*              William----------Huifan Technology Co.,Ltd*
-*********************************************************/
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,11 +22,6 @@ namespace AttLogs
         //Create Standalone SDK class dynamicly.
         public hfemkeeper.CHFEMClass axCHFEM1 = new hfemkeeper.CHFEMClass();
 
-        /********************************************************************************************************************************************
-        * Before you refer to this demo,we strongly suggest you read the development manual deeply first.                                           *
-        * This part is for demonstrating the communication with your device.There are 3 communication ways: "TCP/IP","Serial Port" and "USB Client".*
-        * The communication way which you can use duing to the model of the device.                                                                 *
-        * *******************************************************************************************************************************************/
         #region Communication
         private bool bIsConnected = false;//the boolean value identifies whether the device is connected
         private int iMachineNumber = 1;//the serial number of the device.After connecting the device ,this value will be changed.
@@ -195,10 +187,6 @@ namespace AttLogs
 
         #endregion
 
-        /*************************************************************************************************
-        * Before you refer to this demo,we strongly suggest you read the development manual deeply first.*
-        * This part is for demonstrating operations with(read/get/clear) the attendance records.         *
-        * ************************************************************************************************/
         #region AttLogs
 
         //Download the attendance records from the device(For both Black&White and TFT screen devices).
